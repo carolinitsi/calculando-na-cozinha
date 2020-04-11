@@ -1,2 +1,19 @@
 [0331/213700.298:ERROR:process_info.cc(359)] UncheckedAllocate
 [0405/143103.378:ERROR:process_info.cc(359)] UncheckedAllocate
+[0408/191141.283:ERROR:process_info.cc(359)] UncheckedAllocate
+[0408/220626.469:ERROR:process_info.cc(359)] UncheckedAllocate
+[0409/222058.837:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
+[0409/222327.344:ERROR:process_info.cc(359)] UncheckedAllocate
+[0410/111507.600:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0410/112508.577:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0410/112508.577:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0410/113008.592:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0410/114508.607:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0410/120008.676:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0410/121508.677:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0410/123008.678:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0410/124508.678:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0410/130008.679:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0410/131508.680:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0410/132642.059:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0410/133008.681:ERROR:crash_report_database_win.cc(428)] unexpected header

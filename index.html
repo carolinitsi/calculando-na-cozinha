@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculando na cozinha</title>
     <style>
-        @font-face{
+    @font-face{
         font-family:rockness;
         src:url('rockness.ttf');
     } 
@@ -19,11 +19,28 @@
         src:url('CaviarDreams.ttf');
     }
     body{
-        background-image: url("imagens/background.jpg");
+        background:rgba(250, 248, 243, 0.863);
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
-    P{  color:rgb(255, 254, 254);
+    .cabecalho img{
+        width: 20%;
+        height: 20%;
+        margin-left: 40%;
+    }
+    .cabecalho .menu{
+        height: 35px;
+        background: rgba(247, 242, 229, 0.863);
+    } 
+    .cabecalho .menu a {
+        font-size: 20px;
+        margin-left: 10%;
+    } 
+    .cabecalho .menu a:hover{
+        color:rgb(8, 7, 7);
+    }  
+    P{ 
+         color:rgb(8, 7, 7);
         font-family:CaviarDreams ;
         font-size: 15px;
         
@@ -33,20 +50,47 @@
         font-size: 80px;   
         color:rgb(59, 39, 39);
     }
+    #informacao h1{
+        background:rgba(247, 242, 229, 0.863);
+        height: 35px;
+        color:rgba(5, 5, 5, 0.863);
+        font-family: CaviarDreams;
+        font-size: 30px;
+    }
+    #sobre{
+        background:rgba(250, 248, 243, 0.863);
+        height: 900px;
+    }
+    #sobre p{
+        padding-right: 25%;
+        padding-left: 25%;
+        padding-top: 5%;
+        font-size: 20px;
+    }
+    #sobre h1{
+        margin-left: 25%;
+        background:rgba(247, 242, 229, 0.863);
+        height: 35px;
+        color:#fadb74dc;
+        font-family: CaviarDreams;
+        font-size: 30px;
+    }
     h1{ 
         color:rgba(250, 219, 116, 0.863);
-        font-family: CaviarDreams;
-       
+        font-family: CaviarDreams;   
     }
-    .cards{
-       
-        margin-left:25%;
-        margin-right:25%;
-        
+    h2{
+        font-family: CaviarDreams; 
+        color:rgba(247, 242, 229, 0.863);
     }
-    .card{
+    .cards{   
+        margin-left:25%;    
+    }
+    .card{    
+        width: 50%;
         margin: 2%;
         float: left;
+        padding-right: 25%;
     }
     #resposta,#resposta2,#resposta3,#resposta4{
         font-family:CaviarDreams ;
@@ -66,64 +110,143 @@
         background: rgba(250, 219, 116, 0.863);
         color:black;    
     }
-    #secao{
-        width: 100%;
-        height: auto;
-        float: left; 
+    #informacao{
+        height: auto; 
         background:rgb(14, 12, 12) ; 
-        
-        
-    }
-    #secao h1{
+        padding-left: 25%;
+        padding-top: 2%;
+        padding-bottom: 2%;   
+    }    
+    #informacao p{
+        padding: 2%;
         color:rgb(253, 248, 238);
+        width: 40%;
     }
-    #secao p{
-        color:rgb(253, 248, 238);
+    #secao_compartilhar{
         padding-left:25%;
         padding-right: 25%;
+        font-size: 15px;
+        padding-bottom: 5%;
+        padding-top: 5%;   
+    }
+    #inspire{
+        background:rgba(250, 219, 116, 0.863);
+        height: 900px;     
+        padding-top: 2%;
+        padding-bottom: 5%;
+    }    
+    #inspire h1{
+        background:rgba(247, 242, 229, 0.863);
+        height: 35px;
+        color:rgba(250, 219, 116, 0.863);
+        font-family: CaviarDreams;
+        font-size: 30px;
+        margin-left: 25%;
+    }
+    .card_insp{
+        margin-left: 25%;
+        width: 25%;
+        padding:2% ;    
     }
     a{
         text-decoration: none;
+        font-family: CaviarDreams;
+        color: rgba(250, 219, 116, 0.863);
+        font-size: 20px;
+        padding-left: 1%;
+        padding-right: 1%;   
+        margin:5%;
+
+    }
+    #button_social{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+     #icon{
+        width: 50px;
+        height: 50px;
+    }
+    .footer{
+        background-color: black;
+        height: 200px;
+        padding: 5%;
+    }
+    .footer p{
+        color:rgb(253, 248, 238);
     }
    
+   
+    @media only screen and (max-width: 600px) {
+    .card p{
+        width: 100%;
+    }
+    #inspire{
+        height: auto;
+    }  
+    #inspire p{
+        padding: 2%;
+        width: 70%;    
+    }
+    .card_insp{
+        width: 75%;   
+    }
     
-     #icon{
+    #informacao p{
+        width: 70%;
+    }
+    #informacao h1{
+        font-size: 30px;
+    }
+    a{   
+        margin:2%;
+    }
+    #icon{
         width: 25px;
         height: 25px;
     }
-    #button_social{
-        float:right;    
+    .cabecalho{
+        height: auto;
     }
+    .cabecalho img{
+        width: 50%;
+        height: 50%;
+        margin-left: 25%;
+    }
+    .cabecalho .menu {
+        height: auto;
+        margin-bottom: 5%;
+        padding-bottom:2%; 
+    }
+    .cabecalho .menu a{
+        font-size: 20px;
+        margin-left: 1%; 
+        margin-right: 1%;
+    }
+    #sobre p {
+        font-size: 15px;
+    }
+}
    
     
     </style>
 </head>
 <body>
-    
-    <div id="cabecalho">
-       
-       
-	</div>  
-        <div id="button_social">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://calculandonacozinha.000webhostapp.com/ ">
-                <img id="icon" width="25" height="25" src="ICONS/facebook.png" alt="">
-            </a>
-            <a href="https://api.whatsapp.com/send?text=https://calculandonacozinha.000webhostapp.com/ ">
-                <img id="icon" width="25" height="25" src="ICONS/whatsapp.png" alt="">
-            </a>
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://calculandonacozinha.000webhostapp.com/ ">
-                <img id="icon" width="25" height="25" src="ICONS/linkedin.png" alt="">
-            </a>
+    <div class="cabecalho">
+        <img src="imagens/logo6.png">
+        <div class="menu"> <!--navegação -->
+            <a href="#cards">Inicio</a> 
+            <a href="#informacao">Informação</a>  
+            <a href="#inspire">Inspiração</a> 
+            <a href="#sobre">Sobre</a>      
         </div>
-   
-    
+    </div>      
     <div class="cards">
 
     <div class="card">
     <h1> Calcular custo do produto:</h1>
-    <p>Aqui você pode calcular quanto <br>aquele determinado item lhe<br> custou dentro da sua receita!<br></p>
-    <p>Para saber, por exemplo,<br> quanto custou aquela <br> quantidade X de farinha, <br> basta preencher os <br> seguintes campos com <br>a quantidade que vem na<br> embalagem em gramas <br>(a conversão pode ser <br>feita no conversor abaixo),<br> com o valor do produto pago e <br>com a quantidade<br>utilizada na sua receita! Bora lá!:) <br></p>
-    <p>Quantidade Total(em gramas):<br>(Tem um conversor ali do lado caso precise)</p>
+    <p>Aqui você pode calcular quanto aquele determinado item lhe custou dentro da sua receita!<br></p>
+    <p>Para saber, por exemplo, quanto custou aquela  quantidade X de farinha,  basta preencher os seguintes campos com a quantidade que vem na embalagem em gramas (a conversão pode ser feita no conversor abaixo), com o valor do produto pago e com a quantidade utilizada na sua receita! Bora lá!:) <br></p>
+    <p>Quantidade Total(em gramas):<br>(Tem um conversor logo abaixo caso precise)</p>
     <input type="text" id="qtotal">
     <p>Valor total do produto:</p>
     <input type="text" id="valor">
@@ -135,7 +258,7 @@
 
     <div class="card">
         <h1>Converter para gramas:</h1>
-        <p>Na maioria dos casos os <br> os produtos são vendidos <br>por kg, para melhor <br> calcularmos é necessário que <br> faça a conversão da <br> quantidade de seu produto <br> para gramas. <br> Isso pode ser feito no conversor <br> abaixo" :)</p>
+        <p>Na maioria dos casos os os produtos são vendidos por kg, para melhor calcularmos é necessário que faça a conversão da quantidade de seu produto para gramas. Isso pode ser feito no conversor abaixo" :)</p>
         <p>Valor(kg):</p>
         <input type="text" id="valor2"><br>
         <input type="button" value="GO" id="calcular"onclick="converter()">
@@ -144,7 +267,7 @@
 
     <div class="card">
         <h1>Valor sugerido:</h1>
-        <p>Na hora de calcular o preço <br> do seu produto é muito <br>importante lembrar de cada centavo <br> gasto! E claro, não esquecer <br> do valor do seu trabalho!  <br> Preencha os campos abaixo  <br> com a quantidade produzida  <br> para venda, o valor total  <br> gasto com a receita  <br> (não esqueça de incluir a embalagem), <br> e no campo de "Lucro esperado" <br> você pode colocar o valor  <br> que deseja alcançar de lucro!<br> Depois disso será gerado  <br> o valor sugerido, e o valor  <br> minimo que você pode  <br> vender seu produto!(o valor minimo  <br> não atinge o lucro esperado) <br>  </p>
+        <p>Na hora de calcular o preço do seu produto é muito importante lembrar de cada centavo gasto! E claro, não esquecer do valor do seu trabalho! Preencha os campos abaixo com a quantidade produzida para venda, o valor total gasto com a receita (não esqueça de incluir a embalagem), e no campo de "Lucro esperado" você pode colocar o valor que deseja alcançar de lucro! Depois disso será gerado o valor sugerido, e o valor minimo que você pode vender seu produto! (o valor minimo não atinge o lucro esperado) <br>  </p>
         <p> Quantidade:</p>
         <input type="text" id="q"><br>
         <p> Valor gasto:</p>
@@ -159,14 +282,85 @@
     </div>
     <br>
     </div>
-
-    <div id="secao">
+    <div id="secao_compartilhar">
+        <h1>Gostou do site? Compartilhe nas redes sociais!</h1>
+        <div id="button_social">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://calculandonacozinha.000webhostapp.com/ ">
+                <img id="icon" width="25" height="25" src="ICONS/facebook.png" alt="">
+            </a>
+            <a href="https://api.whatsapp.com/send?text=https://calculandonacozinha.000webhostapp.com/ ">
+                <img id="icon" width="25" height="25" src="ICONS/whatsapp.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://calculandonacozinha.000webhostapp.com/ ">
+                <img id="icon" width="25" height="25" src="ICONS/linkedin.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div id="informacao">
+        <h1>Informação</h1>
+        <h2>Oque é o empreendedorismo</h2>
+        <p>O empreendedorismo está associado à identificação de um problema transformando-o 
+            em uma oportunidade. Podendo ser um negócio ou até mesmo um projeto desde que isso gere
+            algo positivo. O teórico Joseph Schumpeter afirma que o empreendedorismo está totalmente ligado
+            a inovação.</p>
+        <h2>Empreendedorismo no Brasil</h2>
+        <p>O Brasil é um país que apresenta numeros positivos com relação ao empreendedorismo, segundo a
+            Global Entrepreneurship Monitor (GEM), são aproximadamente 52 milhões de brasileiros apostando
+            no próprio negócio. Talvez por conta da crise e do desemprego, 2 em cada 5 brasileiros tem ideia
+            de abrir o próprio negócio.</p>
+        <h2>Como se tornar um bom empreendedor</h2>
+        <p>Não existe uma fórmula mágica para se tornar um bom empreendedor, existe estudo, dedicação
+            e principalmente coragem.
+            Estudo, você precisa dedicar um tempo para estudar seus clientes, calcular seus gastos e aprender
+            sobre seu negócio.
+            Você precisa se dedicar e se comprometer que o seu negócio só vai funcionar se VOCÊ fizer as coisas acontecerem.
+            Mas de nada adianta estudar e se dedicar se você não tiver CORAGEM de dar a cara a tapa, de se jogar
+            nas suas ideias, e principalmente de encarar os "nãos" e a barreiras que aparecem TODOS OS DIAS.
+            </p>
+    </div>
+    </div>
+    <div id="inspire">
+        <h1 >Inspire-se</h1>
+        <div class="card_insp">
+        <h2>Mary Kay Ash</h2>
+        <p>A famosa rede de cosméticos Mary Kay surgiu
+            lá em 1963, quando uma mulher, mãe de três filhos
+            viu o cargo para qual a mesma se dedicou durante 
+            25 anos, ser repassado para um homem que ela mesma havia treinado.
+            Mary escreveu um livro para ajudar mulheres
+            a ter sucesso no mercado de trabalho, e com 
+            apenas 5 mil US$ fundou nada mais nada menos que uma
+            das empresas mais bem sucedidas no ramo de cosméticos. </p>
+        </div>
+        
+    </div>
+    <div id="sobre">
         <h1>Sobre</h1>
-        <p>O empreendedorismo tem crescido cada vez mais atualmente no mercado de trabalho diante da vasta opção que a internet oferece aos seus usuários que vêem nela uma oportunidade de iniciar seus negócios, obviamente esse aumento também tem sido visto nos indivíduos que tem suas lojas físicas espalhadas pelo país inteiro, os pequenos negócios. No entanto, muitas vezes o empreendedor encontra dificuldade em calcular corretamente o valor de seus produtos, portanto esse site foi criado com o intuito de ajuda-los  a realizarem o orçamento de suas produções, afim de orienta-los a não sair perdendo no valor cobrado e ao mesmo tempo arrecadar um preço para o cliente que adquirir sua mercadoria.</p>
+        <p>
+            O empreendedorismo tem crescido cada vez mais atualmente,
+            diante da vasta opção de negócio que a internet oferece aos seus usuários,
+            que vêem nela uma oportunidade de iniciar seus negócios.
+            No entanto, muitas vezes o empreendedor encontra dificuldade
+            em calcular corretamente o valor de seus produtos, portanto,
+            esse site foi criado com o intuito de ajuda-los  a realizarem
+            o orçamento de suas produções, afim de orienta-los a não 
+            sair perdendo no valor cobrado!
+             :) 
+        </p>
+        <p>
+            Hey quando tiver um tempinho entra em contato com a gente!
+            Dê ideias e dicas no que podemos melhorar, e não esqueça 
+            de nos contar sua história de empreendedorismo! :)
+        </p>
+        
     </div>
-    <div class="like">  
-    <fb:like href= "https://calculandonacozinha.000webhostapp.com/ " layout="standard" show-faces="true" width="450" action="like" colorscheme="light" />
-    </div>
+    
+    <footer class="footer">
+        <h1>Contatos</h1>
+        <p>Email: calculandonacozinha@gmail.com</p>
+        <p>Whatsapp:(53)9 8464-6187</p>
+    </footer>
+    
     <script>
    
       function calcular(){
